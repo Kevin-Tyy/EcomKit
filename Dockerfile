@@ -1,4 +1,4 @@
 FROM ubuntu:latest
 LABEL authors="user"
 
-ENTRYPOINT ["top", "-b"]g
+ENTRYPOINT ["top", "-b"]

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <title th:remove="all">Someone bought your product</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <div>
+            <h1>
+                Product number: <span th:text="${product.id}"> </span>
+            </h1>
+          
+            <p>
+                Client name: <span th:text="${product.buyerOfTheProduct.name}"></span>
+                <br>
+                Client email: <span th:text="${product.buyerOfTheProduct.email}"></span>
+            </p>
+          	
+          	<h3>
+          	
+          	Details:
+          	</h3>
+          	
+          	<p>
+          		Name: <span th:text="${product.name}"></span>
+          	</p>
+          	
+          	<p>
+          		Price: <span th:text="${product.price}"></span>
+          	</p>
+            
+        </div>
+    </body>
+</html>
